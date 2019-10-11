@@ -1,0 +1,792 @@
+
+/*reset-------------------------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:’’;
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*base--------------------------------------------------*/
+
+body {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*header------------------------------------------------*/
+
+header {
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 24px;
+    padding: 28px 80px;
+    border-bottom: #cccccc solid 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+header img {
+    height: 24px;
+    margin: auto;
+
+}
+
+header #profil {
+    height: 24px;
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+header #profil a {
+    color: black;
+    text-decoration: none;
+}
+
+header #profil img {
+    height: 24px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header #profil p {
+    height: 22px;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: cursive;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*section-default---------------------------------------*/
+
+#default #order_img {
+    height: 200px;
+    margin: 25px 0;
+}
+
+#default #order {
+    height: 32px;
+}
+
+#default #order a {
+    text-decoration: none;
+    color: black;
+}
+
+#default #order p {
+    height: 32px;
+    font-size: 16px;
+    font-family: cursive;
+    display: inline-block;
+    border: solid black 1px;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-left: 20px;
+    background-color: #f8f8f8;
+}
+
+#default #order img {
+    height: 16px;
+    padding: 8px 10px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: solid black 1px;
+}
+
+/*section-login-----------------------------------------*/
+
+#login {
+    margin-top: 50px;
+}
+
+#login h1 span{
+    color: red;
+}
+
+#login h1 div{
+    font-family: "Gill Sans", sans-serif;
+}
+
+#login .field {
+    height: 30px;
+    width: 182px;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+#login #field_error {
+    background-color: #ff4641;
+}
+
+#login .field img {
+    height: 22px;
+    margin: 3px 0px 3px 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#login .field input {
+    height: 100%;
+    width: 152px;
+    border: none;
+    padding: 0 3px 0 7px;
+    border-left: solid black 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#login input[type="submit"] {
+    color: transparent;
+    border: solid 1px black;
+    border-radius: 4px;
+    height: 28px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    background-image: url("Image/login_confirm.png");
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+#login a {
+    color: #de3800;
+}
+
+/*section-register--------------------------------------*/
+
+#register {
+    margin-top: 50px;
+}
+
+#register h1 span{
+    color: red;
+}
+
+#register h1 div{
+    font-family: "Gill Sans", sans-serif;
+}
+
+#register #error_alert {
+    height: 25px;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    background-color: #ff4641;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+#register #error_alert span {
+    text-decoration: underline;
+}
+
+#register #error_alert img {
+    height: 25px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+
+}
+
+#register .field {
+    height: 30px;
+    width: 222px;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+#register #field_error {
+    background-color: #ff4641;
+}
+
+#register .field img {
+    height: 22px;
+    margin: 3px 0px 3px 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#register .field input {
+    height: 100%;
+    width: 192px;
+    border: none;
+    padding: 0 3px 0 7px;
+    border-left: solid black 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#register input[type="submit"] {
+    color: transparent;
+    border: solid 1px black;
+    border-radius: 4px;
+    height: 28px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    background-image: url("Image/login_confirm.png");
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+#register a {
+    color: #de3800;
+}
+
+/*section-profil----------------------------------------*/
+
+#profil #title label {
+    display: inline-block;
+}
+
+#profil #title label .img_down {
+    height: 75px;
+    width: 75px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+#profil #title label .img_up {
+    height: 75px;
+    width: 75px;
+
+}
+
+#profil #title label .img_up:hover {
+    background-image: url("Image/profil_add.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+#profil #title #img_input {
+    display: none;
+}
+
+
+#profil #title {
+    margin-top: 40px
+}
+
+#profil #title h1 {
+    margin-top: 15px;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+#profil table{
+    margin: 40px auto 20px auto;
+    border-collapse: collapse;
+
+}
+
+#profil table img {
+    height: 25px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#profil table tr {
+    margin: 20px 0;
+    border-bottom: solid #cccccc 1px;
+    width: 300px;
+}
+
+#profil table td {
+    height: 50px;
+}
+
+#profil table td a {
+    text-decoration: none;
+    color: black;
+    cursor: text;
+}
+
+#profil table .label {
+    width: 100px;
+    padding-right: 15px;
+    border-right: solid #cccccc 1px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#profil table input {
+    width: 250px;
+    text-align: center;
+    font-family: cursive;
+    vertical-align: middle;
+    border: none;
+    height: 35px;
+    font-size: 16px;
+    border-bottom: solid 3px #ff4641;
+}
+
+#profil table input:focus {
+    outline:none;
+}
+
+#profil table .data {
+    width: 250px;
+    text-align: center;
+    font-family: cursive;
+    vertical-align: middle;
+}
+
+#profil #tr_end {
+    border-bottom: none;
+}
+#profil #td_end {
+    height: 20px;
+}
+
+#profil #password p {
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+#profil #password p a {
+    color: #de3800;
+}
+
+#profil #logout {
+    margin-top: 20px;
+}
+#profil #logout a {
+    font-family: cursive;
+    color: black;
+}
+
+/*section-password--------------------------------------*/
+
+#password h1 {
+    margin: 35px 0 15px;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+#password div {
+    margin: 10px 0;
+}
+
+#password div p {
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#password div input {
+    display: inline-block;
+    width: 180px;
+    height: 25px;
+    padding: 0 5px;
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+#password input[type="submit"] {
+    color: transparent;
+    border: solid 1px black;
+    border-radius: 4px;
+    height: 28px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    background-image: url("Image/login_confirm.png");
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#password #error_alert {
+    height: 25px;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    background-color: #ff4641;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+#password #error_alert span {
+    text-decoration: underline;
+}
+
+#password #error_alert img {
+    height: 25px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+
+}
+
+#password #field_error {
+    border-right: solid 4px #ff4641;
+}
+/*section-order-all-------------------------------------*/
+
+#order_step {
+    width: 500px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+#order_step img {
+    width: 500px;
+}
+
+#step_nav{
+    width: 500px;
+    text-align: left;
+    display: inline-block;
+}
+
+#step_nav p{
+    display: inline-block;
+    text-align: left;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+
+#step_nav p a{
+    color: black;
+    text-decoration: none;
+}
+
+#step_nav #here{
+    font-weight: bold;
+    font-size: 18px;
+    color:  #ff4641;
+}
+
+#step_nav p a:hover{
+    text-decoration: underline;
+}
+
+#step_nav #here:hover{
+    text-decoration: underline #ff4641;
+}
+
+
+
+#step_nav #one {
+    width: 52px;
+    margin-right: 48px;
+}
+
+#step_nav #two {
+    width: 32px;
+    margin-right: 36px;
+}
+
+#step_nav #three {
+    width: 76px;
+    text-align: center;
+    margin-right: 14px;
+}
+
+#step_nav #four {
+    width: 66px;
+    margin-right: 30px;
+}
+
+
+/*section-adress-add------------------------------------*/
+
+#adress_add h1 {
+    font-family: cursive;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+#adress_add #adress_form {
+    width: 500px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#adress_add #adress_form div{
+    width: 500px;
+    text-align: right;
+    margin: 10px 0;
+}
+
+#adress_add #adress_form input{
+    width: 300px;
+    margin-right: 80px;
+    padding: 5px;
+    border: #9f9f9f 1px solid;
+    border-radius: 5px;
+}
+
+#adress_add #adress_form label{
+
+}
+
+#adress_add #adress_form #user_input_autocomplete_address{
+    width: 500px;
+}
+
+#adress_add #adress_form input[type="submit"] {
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+input[readonly="true"] {
+    color: rgb(84, 84, 84);
+    cursor: default;
+    background-color: rgb(235, 235, 228);
+}
+
+#adress_add #adress_form #div_submit{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#adress_add #error_alert {
+    height: 25px;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    background-color: #ff4641;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+#adress_add #error_alert span {
+    text-decoration: underline;
+}
+
+#adress_add #error_alert img {
+    height: 25px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+
+}
+
+/*section-adress----------------------------------------*/
+
+#adress h1 {
+    font-family: cursive;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+#adress #adress_add_button {
+    height: 21px;
+    width: 180px;
+    padding: 3px 0 6px;
+    border: 1px solid #9f9f9f;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    margin: 35px 0;
+    display: inline-block;
+}
+
+#adress #adress_add_button a {
+    color: black;
+    text-decoration: none;
+}
+
+#adress #adress_add_button p {
+    display: inline-block;
+    height: 22px;
+    padding-top: 3px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+#adress #adress_add_button img {
+    display: inline-block;
+    height: 22px;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+#adress .adress_radio {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    height: 40px;
+    border: 1px solid #9f9f9f;
+    border-bottom: none;
+    background-color: #f8f8f8;
+
+}
+
+#adress #first {
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #9f9f9f;
+    border-bottom: none;
+    margin-top: 5px;
+}
+
+#adress #last {
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #9f9f9f;
+}
+
+#adress #lastandlast {
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #9f9f9f;
+}
+
+#adress .adress_radio label {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0px 10px 10px;
+    height: 20px;
+    width: 210px;
+    cursor: pointer;
+    border-left: 1px solid #9f9f9f;
+}
+
+#adress .adress_radio input {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 30px;
+    height: 20px;
+    width: 15px;
+    cursor: pointer;
+}
+
+#adress input[type="submit"] {
+    width: 100px;
+    height: 25px;
+    margin: 25px auto;
+    cursor: pointer;
+    border: 1px solid #9f9f9f;
+    background-color: #f8f8f8;
+    border-radius: 4px
+}
+
+/*responsive--------------------------------------------*/
+
+@media all and (max-width: 500px) {
+
+    header #profil p {
+        display: none;
+    }
+
+    header #profil img {
+        margin-left: 50px;
+    }
+
+}
